@@ -20,8 +20,8 @@ public class CuponRestController {
         return cuponEntity;
     }
 
-    @GetMapping("/Cupons/{code}")
-    public List<CuponEntity> getCupon(@PathVariable String code){
+    @GetMapping("/cupons/{code}")
+    public CuponEntity getCupon(@PathVariable String code){
        return cuponRepository.findByCode(code);
     }
 }

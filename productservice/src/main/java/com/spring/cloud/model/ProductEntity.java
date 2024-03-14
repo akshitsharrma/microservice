@@ -17,6 +17,8 @@ public class ProductEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private  String description;
+    private String description;
     private BigDecimal price;
+    @Transient
+    private String code;
 }
